@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Навчальний сайт для практики GitHub Pages, Google Analytics 4 та Microsoft Clarity.">
+  <title>Green Corner — навчальний сайт</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- GOOGLE ANALYTICS 4:
+       Замініть G-XXXXXXXXXX на свій Measurement ID з Google Analytics.
+       Після цього розкоментуйте код нижче.
+  -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- MICROSOFT CLARITY:
+       Замініть CLARITY_PROJECT_ID на ID проєкту Clarity.
+       Після цього розкоментуйте код нижче.
+  -->
+  <!--
+  <script>
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "CLARITY_PROJECT_ID");
+  </script>
+  -->
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Green Corner — на головну">Green<span>Corner</span></a>
+    <nav aria-label="Головна навігація">
+      <a href="#about">Про нас</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Маленькі кроки до зеленішого життя</p>
+        <h1>Додай трохи <span>зелені</span> у свій простір</h1>
+        <p class="hero-text">Навчальний демонстраційний сайт магазину кімнатних рослин. Тут можна переглянути каталог і дізнатися більше про догляд за рослинами.</p>
+        <a class="button" href="#catalog" id="hero-catalog-button">Переглянути каталог</a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ілюстрація кімнатної рослини">
+        <div class="sun"></div>
+        <div class="plant">
+          <span class="leaf leaf-one"></span><span class="leaf leaf-two"></span>
+          <span class="leaf leaf-three"></span><span class="leaf leaf-four"></span>
+          <span class="stem"></span><span class="pot"></span>
+        </div>
+        <div class="art-caption">grow at your own pace</div>
+      </div>
+    </section>
+
+    <section class="section intro" id="about">
+      <p class="eyebrow">Про Green Corner</p>
+      <h2>Рослини, що роблять дім затишнішим</h2>
+      <p>Green Corner — вигаданий бренд для навчального проєкту. Сайт створено для демонстрації публікації через GitHub Pages та налаштування інструментів вебаналітики.</p>
+    </section>
+
+    <section class="section catalog" id="catalog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Обери свою рослину</p>
+          <h2>Популярні рослини</h2>
+        </div>
+        <p>Три прості варіанти для знайомства з домашнім озелененням.</p>
+      </div>
+      <div class="cards">
+        <article class="plant-card">
+          <div class="plant-picture picture-one" aria-hidden="true"><span>✦</span></div>
+          <div class="card-content"><p class="card-tag">Для початківців</p><h3>Сансевієрія</h3><p>Невибаглива рослина, яка добре підходить для першого досвіду.</p><button class="text-button" data-product="Сансевієрія">Дізнатися більше ↗</button></div>
+        </article>
+        <article class="plant-card">
+          <div class="plant-picture picture-two" aria-hidden="true"><span>✿</span></div>
+          <div class="card-content"><p class="card-tag">Яскравий акцент</p><h3>Монстера</h3><p>Великі декоративні листки додають інтер’єру виразності.</p><button class="text-button" data-product="Монстера">Дізнатися більше ↗</button></div>
+        </article>
+        <article class="plant-card">
+          <div class="plant-picture picture-three" aria-hidden="true"><span>❋</span></div>
+          <div class="card-content"><p class="card-tag">Компактний формат</p><h3>Заміокулькас</h3><p>Стриманий вигляд і блискуче листя для сучасного простору.</p><button class="text-button" data-product="Заміокулькас">Дізнатися більше ↗</button></div>
+        </article>
+      </div>
+      <p class="notice" id="interaction-message" role="status" aria-live="polite">Натисни «Дізнатися більше», щоб перевірити взаємодію із сайтом.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div><p class="eyebrow">Залишаймося на зв’язку</p><h2>Потрібна порада щодо рослин?</h2><p>Напиши нам — це демонстраційна форма, яка не надсилає дані на сервер.</p></div>
+      <form id="contact-form">
+        <label for="email">Твоя електронна пошта</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" required>
+        <button class="button" type="submit">Надіслати</button>
+        <p class="form-message" id="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">Green<span>Corner</span></a>
+    <p>Навчальний проєкт · GitHub Pages · GA4 · Microsoft Clarity</p>
+    <p>Демонстраційний сайт. Це не справжній магазин.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
